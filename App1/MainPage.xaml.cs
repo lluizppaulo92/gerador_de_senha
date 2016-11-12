@@ -7,9 +7,8 @@ using System.Text.RegularExpressions;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 // Colaboradores: Luiz Paulo, Matheus Jose, Carlos Eduardo
-// mais uma modificação
-// teste
-//Alterado por Matheus
+//alteração para o Luiz
+//teste
 
 
 namespace App1
