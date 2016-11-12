@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 namespace App1
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated to within a Frame. mudanca luiz
     /// </summary>
     public enum ForcaDaSenha
     {
