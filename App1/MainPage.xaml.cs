@@ -9,8 +9,6 @@ using System.Text.RegularExpressions;
 // Colaboradores: Luiz Paulo, Matheus Jose, Carlos Eduardo
 //alteração para o carlos
 //teste de compatibilidade
-//
-
 
 namespace App1
 {
@@ -51,7 +49,6 @@ namespace App1
         {
 
         }
-
 
         private void buttonGerarSenha_Click(object sender, RoutedEventArgs e)
         {
