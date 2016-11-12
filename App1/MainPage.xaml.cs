@@ -14,6 +14,7 @@ namespace App1
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame. mudanca luiz
+    /// nova tag adicionada
     /// </summary>
     public enum ForcaDaSenha
     {
