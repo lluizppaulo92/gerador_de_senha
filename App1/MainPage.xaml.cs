@@ -7,8 +7,9 @@ using System.Text.RegularExpressions;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 // Colaboradores: Luiz Paulo, Matheus Jose, Carlos Eduardo
-//alteração para o carlos
-//teste de compatibilidade
+//alteração para o Luiz
+//teste
+
 
 namespace App1
 {
@@ -49,6 +50,7 @@ namespace App1
         {
 
         }
+
 
         private void buttonGerarSenha_Click(object sender, RoutedEventArgs e)
         {
