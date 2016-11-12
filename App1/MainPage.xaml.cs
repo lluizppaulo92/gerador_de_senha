@@ -8,14 +8,12 @@ using System.Text.RegularExpressions;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 // Colaboradores: Luiz Paulo, Matheus Jose, Carlos Eduardo
 //alteração para o Luiz
-//teste
-//Alterado por Matheus
 
 
 namespace App1
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated to within a Frame. mudanca luiz
     /// </summary>
     public enum ForcaDaSenha
     {
