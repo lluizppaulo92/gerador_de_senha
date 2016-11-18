@@ -1,0 +1,13 @@
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\geradorSenha.csprojResolveAssemblyReference.cache
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\App.g.i.cs
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\App.g.cs
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\MainPage.g.i.cs
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\MainPage.g.cs
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\XamlTypeInfo.g.cs
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\App.xaml
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\MainPage.xaml
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\App.xbf
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\MainPage.xbf
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\XamlSaveStateFile.xml
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\App1.exe
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\App1.pdb

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace App1
 {
-    class CryptographyManager
+    class Senha
     {
+        public string descricao { get; set; }
+        public string passowd { get; set; }
     }
 }
