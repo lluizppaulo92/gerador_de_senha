@@ -9,6 +9,6 @@ namespace App1
     class Senha
     {
         public string descricao { get; set; }
-        public string passowd { get; set; }
+        public string password { get; set; }
     }
 }
