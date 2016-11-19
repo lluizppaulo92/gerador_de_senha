@@ -1,11 +1,11 @@
-﻿using SQLite.Net.Async;
-using SQLiteNetExtensionsAsync.Extensions;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using SQLite.Net.Async;
+using SQLiteNetExtensionsAsync.Extensions;
 
 namespace App1
 {
-    class SenhaDAO
+    class SenhaDAO 
     {
         SQLiteAsyncConnection conn;
 

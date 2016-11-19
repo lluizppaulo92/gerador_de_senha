@@ -26,6 +26,7 @@
         <TextBlock x:Name="textBlockForcaSenha" HorizontalAlignment="Left" Margin="43,47,0,0" Grid.Row="2" TextWrapping="Wrap" Text="teste" VerticalAlignment="Top" Width="267" Foreground="#FFF70404"/>
         <TextBox x:Name="textBoxSenhaCriptografada" HorizontalAlignment="Left" Margin="17,72,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="313" PlaceholderText="Senha Criptografada"/>
         <TextBox x:Name="textBoxSenhaDescriptografada" HorizontalAlignment="Left" Margin="17,109,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="313" PlaceholderText="Senha Descriptografada"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="35,167,0,0" Grid.Row="2" VerticalAlignment="Top" Click="button_Click"/>
 
     </Grid>
 </Page>

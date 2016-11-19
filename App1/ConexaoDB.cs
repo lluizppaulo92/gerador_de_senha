@@ -1,13 +1,9 @@
-﻿using SQLite;
-using SQLite.Net;
-using SQLite.Net.Async;
-using SQLite.Net.Platform.WinRT;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.IO;
 using System.Threading.Tasks;
+using SQLite.Net.Async;
+using System;
+using SQLite.Net;
+using SQLite.Net.Platform.WinRT;
 
 namespace App1
 {

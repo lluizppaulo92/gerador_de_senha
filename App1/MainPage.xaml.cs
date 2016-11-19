@@ -173,9 +173,19 @@ namespace App1
         }
 
 
-        // ####### CRIPTOGRAFIA
+        // ####### SALVAR SENHA
+        private async void button_Click(object sender, RoutedEventArgs e)
+        {
+            Senha senha = new Senha();
+            ConexaoDB conn = new ConexaoDB();
+            SenhaDAO senhaDAO = new SenhaDAO(conn);
 
+            senha.descricao = textBoxTituloSenha.Text;
+            senha.password = textBoxSenhaGerada.Text;
 
+            await senhaDAO.InsertSenhaAsync(senha);
+
+        }
     }
 
 }
