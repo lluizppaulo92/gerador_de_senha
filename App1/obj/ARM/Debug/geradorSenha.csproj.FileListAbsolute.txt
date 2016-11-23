@@ -216,3 +216,4 @@ C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\qualifiers.txt
 C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\qualifiers.txt.intermediate
 C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\ProjectArchitectures.txt
+C:\projetos\gerador_de_senha\App1\obj\ARM\Debug\geradorSenha.csprojResolveAssemblyReference.cache

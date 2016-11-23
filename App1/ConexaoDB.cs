@@ -23,7 +23,7 @@ namespace App1
 
         public async Task InitializeDatabase()
         {
-            await conn.CreateTableAsync<Senha>();
+             conn.CreateTableAsync<Senha>();
         }
 
         public SQLiteAsyncConnection GetAsyncConnection()
