@@ -134,9 +134,6 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="Microsoft.Midi.GmDls, Version=10.0.14393.0">
-      <Name>Microsoft General MIDI DLS for Universal Windows Apps</Name>
-    </SDKReference>
     <SDKReference Include="SQLite.UWP.2015, Version=3.15.1">
       <Name>SQLite for Universal Windows Platform</Name>
     </SDKReference>

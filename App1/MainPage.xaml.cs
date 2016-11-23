@@ -4,6 +4,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using System.Text.RegularExpressions;
+using System.Collections.Generic;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 // Colaboradores: Luiz Paulo, Matheus Jose, Carlos Eduardo
@@ -37,9 +38,20 @@ namespace App1
 
     public sealed partial class MainPage : Page
     {
+        Senha senhaM = new Senha();
+        ConexaoDB conn = null;
+        SenhaDAO senhaDAO = null;
+        
+
         public MainPage()
         {
             this.InitializeComponent();
+            conn = new ConexaoDB();
+            senhaDAO = new SenhaDAO(conn);
+            conn.InitializeDatabase();
+
+
+
         }
 
         private void checkBox_Checked(object sender, RoutedEventArgs e)
@@ -172,19 +184,54 @@ namespace App1
                 return ForcaDaSenha.Segura;
         }
 
+        private void limparCampos()
+        {
+            senhaM = new Senha();
+            textBoxSenhaGerada.Text="";
+            textBoxTituloSenha.Text = "";
+            checkBoxCaracterEspecial.IsChecked = false;
+            checkBoxLetraMaiuscula.IsChecked = false;
+            checkBoxLetrasMinusculas.IsChecked = false;
+            checkBoxNumeros.IsChecked = false;
+            sliderTamanho.Value = 4;
+        }
 
         // ####### SALVAR SENHA
-        private async void button_Click(object sender, RoutedEventArgs e)
+        private async void salvar(object sender, RoutedEventArgs e)
         {
-            Senha senha = new Senha();
-            ConexaoDB conn = new ConexaoDB();
-            SenhaDAO senhaDAO = new SenhaDAO(conn);
+            
+            senhaM.descricao = textBoxTituloSenha.Text;
+            senhaM.password = textBoxSenhaGerada.Text;
+            if (senhaM.senhaId == 0)
+            {
+                await this.senhaDAO.InsertSenhaAsync(senhaM);
+                limparCampos();
+                listar(null, null);
+            }
+            else
+            {
+                await this.senhaDAO.UpdateSenhaAsync(senhaM);
+                limparCampos();
+                listar(null, null);
+            }
+            
 
-            senha.descricao = textBoxTituloSenha.Text;
-            senha.password = textBoxSenhaGerada.Text;
+        }
 
-            await senhaDAO.InsertSenhaAsync(senha);
+        private async void listar(object sender, RoutedEventArgs e)
+        {
+            List<Senha> listSenha = await senhaDAO.SelectAllSenhasAsync();
+            
+            foreach (Senha senhaEach  in listSenha)
+             
+            {
+                listView.Items.Add("ID: " + senhaEach.senhaId + "\nDescrição: " + senhaEach.descricao + "\nSenha: " + senhaEach.password);
+            }
+        }
 
+        private void listView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+           
         }
     }
 
