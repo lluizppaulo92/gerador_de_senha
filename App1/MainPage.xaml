@@ -25,7 +25,7 @@
         <TextBlock x:Name="textBlockForcaSenha" HorizontalAlignment="Left" Margin="43,47,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="267" Foreground="#FFF70404"/>
         <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="123,72,0,0" Grid.Row="2" VerticalAlignment="Top" Click="salvar"/>
         <Button x:Name="btnNovo" Content="Novo" HorizontalAlignment="Left" Margin="59,72,0,0" Grid.Row="2" VerticalAlignment="Top" Click="btnNovo_Click"/>
-        <Button x:Name="buttonDeleteAll" Content="Deletar" HorizontalAlignment="Left" Margin="190,72,0,0" Grid.Row="2" VerticalAlignment="Top" Width="65" Click="apagarLista"/>
+        <Button x:Name="buttonDeleteAll" Content="Deletar" HorizontalAlignment="Left" Margin="190,72,0,0" Grid.Row="2" VerticalAlignment="Top" Width="65" Click="deletar"/>
         <TextBlock x:Name="textBlockListSenha" HorizontalAlignment="Left" Margin="14,229,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <ListView x:Name="listViewSenha" HorizontalAlignment="Left" Height="100" Margin="414,82,0,0" VerticalAlignment="Top" Width="323" SelectionChanged="listView_SelectionChanged" ItemsSource="{x:Bind SenhaViewModel.Senhas}" IsItemClickEnabled="True" Grid.RowSpan="2" >
             <ListView.ItemTemplate>
