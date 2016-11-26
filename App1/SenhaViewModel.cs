@@ -26,5 +26,15 @@ namespace App1
             }
         }
 
+        public void atualizar(Senha senha)
+        {
+            foreach(Senha s in Senhas)
+            {
+                if (s.senhaId == senha.senhaId)
+                {
+                    Senhas[senhas.IndexOf(s)] = senha;
+                }
+            }
+        }
     }
 }

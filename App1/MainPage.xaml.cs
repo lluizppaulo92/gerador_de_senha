@@ -8,16 +8,9 @@ using System.Collections.Generic;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 // Colaboradores: Luiz Paulo, Matheus Jose, Carlos Eduardo
-//alteração para o Luiz 123
-//1234
-
 
 namespace App1
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame. mudanca luiz
-    /// nova tag adicionada
-    /// </summary>
     public enum ForcaDaSenha
     {
         Inaceitavel,
@@ -40,18 +33,14 @@ namespace App1
     {
         Senha senhaM = new Senha();
         ConexaoDB conn = ConnectionFactory.conexao;
-        SenhaDAO senhaDAO = null;
-        List<Senha> listSenha;
-         
-
+        SenhaDAO senhaDAO;
+                 
         public MainPage()
         {
             this.InitializeComponent();
             conn = new ConexaoDB();
             senhaDAO = new SenhaDAO(conn);
-            conn.InitializeDatabase();
             this.SenhaViewModel = new SenhaViewModel();
-
         }
 
           SenhaViewModel SenhaViewModel { get; set; }
@@ -106,8 +95,6 @@ namespace App1
                               .ToArray());
                 textBoxSenhaGerada.Text = result;
                 textBlockForcaSenha.Text = Convert.ToString(GetForcaDaSenha(result));
-//                textBoxSenhaCriptografada.Text = Criptografar("",result);
-  //              textBoxSenhaDescriptografada.Text = Descriptografar("",result);
             }
           }
 
@@ -153,7 +140,6 @@ namespace App1
             return Math.Min(2, rawplacar) * 5;
         }
 
-
         private int GetPontoPorRepeticao(string senha)
         {
             System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(@"(\w)*.*\1");
@@ -186,9 +172,6 @@ namespace App1
                 return ForcaDaSenha.Segura;
         }
 
-         
-
-
         private void limparCampos()
         {
             senhaM = new Senha();
@@ -201,47 +184,47 @@ namespace App1
             sliderTamanho.Value = 4;
         }
 
+       //PREENCHER CAMPOS SENHA
+       void preencherSenha(Senha s)
+        {
+            senhaM = s;
+            textBoxTituloSenha.Text = senhaM.descricao;
+            textBoxSenhaGerada.Text = senhaM.password;
+        }
+        
         // ####### SALVAR SENHA
         private async void salvar(object sender, RoutedEventArgs e)
-        {
-            
+        {    
             senhaM.descricao = textBoxTituloSenha.Text;
             senhaM.password = textBoxSenhaGerada.Text;
             if (senhaM.senhaId == 0)
             {
                 await this.senhaDAO.InsertSenhaAsync(senhaM);
                 limparCampos();
+                this.SenhaViewModel.atualizar(senhaM);
                 
+               
             }
             else
             {
                 await this.senhaDAO.UpdateSenhaAsync(senhaM);
                 limparCampos();
-                
+                this.SenhaViewModel.atualizar(senhaM);
+
             }
-            
-
         }
-
-        
 
         private async void apagarLista(object sender, RoutedEventArgs e)
         {
             
         }
 
-       
-
         private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            object item1 = sender;
-            Senha item2 ;
-            SelectionChangedEventArgs item3 = e;
-            string a = e.ToString();
-            
+            Senha senhaSelecionada = (Senha)listViewSenha.SelectedItem;
+            preencherSenha(senhaSelecionada);
         }
 
-     
     }
 
 }
