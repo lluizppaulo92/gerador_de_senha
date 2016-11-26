@@ -130,7 +130,6 @@ C:\projetos\gerador_de_senha\App1\bin\x86\Debug\System.Xml.ReaderWriter.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\System.Xml.XDocument.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\projetos\gerador_de_senha\App1\obj\x86\Debug\geradorSenha.csprojResolveAssemblyReference.cache
 C:\projetos\gerador_de_senha\App1\obj\x86\Debug\App.g.i.cs
 C:\projetos\gerador_de_senha\App1\obj\x86\Debug\App.g.cs
 C:\projetos\gerador_de_senha\App1\obj\x86\Debug\MainPage.g.i.cs
