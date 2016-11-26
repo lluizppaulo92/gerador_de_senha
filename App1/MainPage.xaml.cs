@@ -202,20 +202,20 @@ namespace App1
                 await this.senhaDAO.InsertSenhaAsync(senhaM);
                 limparCampos();
                 this.SenhaViewModel.atualizar(senhaM);
-                this.SenhaViewModel = new SenhaViewModel();
+  
             }
             else
             {
                 await this.senhaDAO.UpdateSenhaAsync(senhaM);
                 limparCampos();
                 this.SenhaViewModel.atualizar(senhaM);
-                this.SenhaViewModel = new SenhaViewModel();
+                
             }
         }
 
-        private async void apagarLista(object sender, RoutedEventArgs e)
+        private async void deletar(object sender, RoutedEventArgs e)
         {
-            
+            await this.senhaDAO.DeleteSenhaAsync(senhaM); 
         }
 
         private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
