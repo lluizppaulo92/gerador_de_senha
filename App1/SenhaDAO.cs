@@ -38,5 +38,7 @@ namespace App1
         {
             return await conn.QueryAsync<Senha>(query);
         }
+
+       
     }
 }

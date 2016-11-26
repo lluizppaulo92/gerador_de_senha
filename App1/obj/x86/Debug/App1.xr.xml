@@ -47,6 +47,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
@@ -73,7 +74,23 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootEvent Name="ItemClick" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Symbol" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="App1.MainPage" />
   </Roots.RootTypes>

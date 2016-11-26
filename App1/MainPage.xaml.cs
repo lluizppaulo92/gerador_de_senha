@@ -39,9 +39,10 @@ namespace App1
     public sealed partial class MainPage : Page
     {
         Senha senhaM = new Senha();
-        ConexaoDB conn = null;
+        ConexaoDB conn = ConnectionFactory.conexao;
         SenhaDAO senhaDAO = null;
-        
+        List<Senha> listSenha;
+         
 
         public MainPage()
         {
@@ -49,10 +50,11 @@ namespace App1
             conn = new ConexaoDB();
             senhaDAO = new SenhaDAO(conn);
             conn.InitializeDatabase();
-
-
+            this.SenhaViewModel = new SenhaViewModel();
 
         }
+
+          SenhaViewModel SenhaViewModel { get; set; }
 
         private void checkBox_Checked(object sender, RoutedEventArgs e)
         {
@@ -184,6 +186,9 @@ namespace App1
                 return ForcaDaSenha.Segura;
         }
 
+         
+
+
         private void limparCampos()
         {
             senhaM = new Senha();
@@ -206,33 +211,37 @@ namespace App1
             {
                 await this.senhaDAO.InsertSenhaAsync(senhaM);
                 limparCampos();
-                listar(null, null);
+                
             }
             else
             {
                 await this.senhaDAO.UpdateSenhaAsync(senhaM);
                 limparCampos();
-                listar(null, null);
+                
             }
             
 
         }
 
-        private async void listar(object sender, RoutedEventArgs e)
+        
+
+        private async void apagarLista(object sender, RoutedEventArgs e)
         {
-            List<Senha> listSenha = await senhaDAO.SelectAllSenhasAsync();
             
-            foreach (Senha senhaEach  in listSenha)
-             
-            {
-                listView.Items.Add("ID: " + senhaEach.senhaId + "\nDescrição: " + senhaEach.descricao + "\nSenha: " + senhaEach.password);
-            }
         }
 
-        private void listView_ItemClick(object sender, ItemClickEventArgs e)
+       
+
+        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
+            object item1 = sender;
+            Senha item2 ;
+            SelectionChangedEventArgs item3 = e;
+            string a = e.ToString();
+            
         }
+
+     
     }
 
 }
