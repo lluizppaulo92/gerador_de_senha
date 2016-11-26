@@ -21,7 +21,7 @@
         <TextBlock x:ConnectionId='7' x:Name="textBlockTamanhoSenha" HorizontalAlignment="Left" Margin="17,71,0,0" TextWrapping="Wrap" Text="Tamanho da Senha" VerticalAlignment="Top" Height="20" Width="137"/>
         <TextBox x:ConnectionId='8' x:Name="textBoxTituloSenha" HorizontalAlignment="Left" Margin="17,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="313" PlaceholderText="Titulo da Senha" Height="32"/>
         <Button x:ConnectionId='9' x:Name="buttonGerarSenha" Content="Gerar Senha" HorizontalAlignment="Left" Margin="118,46,0,0" Grid.Row="1" VerticalAlignment="Top"                                Height="32" Width="101"/>
-        <TextBox x:ConnectionId='10' x:Name="textBoxSenhaGerada" HorizontalAlignment="Left" Margin="17,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="313" Height="32"/>
+        <TextBox x:ConnectionId='10' x:Name="textBoxSenhaGerada" HorizontalAlignment="Left" Margin="17,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="313" Height="32" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False"/>
         <TextBlock x:ConnectionId='11' x:Name="textBlockForcaSenha" HorizontalAlignment="Left" Margin="43,47,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="267" Foreground="#FFF70404"/>
         <Button x:ConnectionId='12' x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="87,72,0,0" Grid.Row="2" VerticalAlignment="Top"               />
         <Button x:ConnectionId='13' x:Name="btnNovo" Content="Novo" HorizontalAlignment="Left" Margin="23,72,0,0" Grid.Row="2" VerticalAlignment="Top"                      />

@@ -19,10 +19,16 @@ namespace App1
         public async void popularSenhas()
         {
             SenhaDAO senhaDAO = new SenhaDAO(ConnectionFactory.conexao);
-            List<Senha> listSenha = await senhaDAO.SelectAllSenhasAsync();
-            foreach (Senha senhaEach in listSenha)
+            try
             {
-                this.senhas.Add(senhaEach);
+                List<Senha> listSenha = await senhaDAO.SelectAllSenhasAsync();
+                foreach (Senha senhaEach in listSenha)
+                {
+                    this.senhas.Add(senhaEach);
+                }
+            }catch(SQLite.Net.SQLiteException e)
+            {
+                //Não carrega listagem
             }
         }
 
