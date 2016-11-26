@@ -202,15 +202,14 @@ namespace App1
                 await this.senhaDAO.InsertSenhaAsync(senhaM);
                 limparCampos();
                 this.SenhaViewModel.atualizar(senhaM);
-                
-               
+                this.SenhaViewModel = new SenhaViewModel();
             }
             else
             {
                 await this.senhaDAO.UpdateSenhaAsync(senhaM);
                 limparCampos();
                 this.SenhaViewModel.atualizar(senhaM);
-
+                this.SenhaViewModel = new SenhaViewModel();
             }
         }
 

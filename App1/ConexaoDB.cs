@@ -16,14 +16,14 @@ namespace App1
         public ConexaoDB()
         {
             dbPath = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "GeradorSenha.sqlite");
-
             var connectionFactory = new Func<SQLiteConnectionWithLock>(() => new SQLiteConnectionWithLock(new SQLitePlatformWinRT(), new SQLiteConnectionString(dbPath, storeDateTimeAsTicks: false)));
             conn = new SQLiteAsyncConnection(connectionFactory);
+            InitializeDatabase();
         }
 
         public async Task InitializeDatabase()
         {
-             conn.CreateTableAsync<Senha>();
+            await conn.CreateTableAsync<Senha>();
         }
 
         public SQLiteAsyncConnection GetAsyncConnection()
