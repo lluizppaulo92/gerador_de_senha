@@ -52,8 +52,8 @@ C:\projetos\gerador_de_senha\App1\bin\x86\Debug\clrjit.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\clrcompression.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\System.Private.Uri.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\SQLite.Net.Platform.WinRT.dll
-C:\projetos\gerador_de_senha\App1\bin\x86\Debug\SQLite.Net.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\SQLite.Net.Async.dll
+C:\projetos\gerador_de_senha\App1\bin\x86\Debug\SQLite.Net.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\SQLiteNetExtensions.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\SQLiteNetExtensionsAsync.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\System.AppContext.dll
@@ -130,6 +130,7 @@ C:\projetos\gerador_de_senha\App1\bin\x86\Debug\System.Xml.ReaderWriter.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\System.Xml.XDocument.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\projetos\gerador_de_senha\App1\bin\x86\Debug\System.Xml.XmlSerializer.dll
+C:\projetos\gerador_de_senha\App1\obj\x86\Debug\geradorSenha.csprojResolveAssemblyReference.cache
 C:\projetos\gerador_de_senha\App1\obj\x86\Debug\App.g.i.cs
 C:\projetos\gerador_de_senha\App1\obj\x86\Debug\App.g.cs
 C:\projetos\gerador_de_senha\App1\obj\x86\Debug\MainPage.g.i.cs
@@ -217,4 +218,3 @@ C:\projetos\gerador_de_senha\App1\obj\x86\Debug\qualifiers.txt
 C:\projetos\gerador_de_senha\App1\obj\x86\Debug\qualifiers.txt.intermediate
 C:\projetos\gerador_de_senha\App1\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\projetos\gerador_de_senha\App1\obj\x86\Debug\ProjectArchitectures.txt
-C:\projetos\gerador_de_senha\App1\obj\x86\Debug\geradorSenha.csprojResolveAssemblyReference.cache
