@@ -23,8 +23,9 @@
         <Button x:Name="buttonGerarSenha" Content="Gerar Senha" HorizontalAlignment="Left" Margin="118,46,0,0" Grid.Row="1" VerticalAlignment="Top" Click="buttonGerarSenha_Click" Height="32" Width="101"/>
         <TextBox x:Name="textBoxSenhaGerada" HorizontalAlignment="Left" Margin="17,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="313" Height="32"/>
         <TextBlock x:Name="textBlockForcaSenha" HorizontalAlignment="Left" Margin="43,47,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="267" Foreground="#FFF70404"/>
-        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="35,72,0,0" Grid.Row="2" VerticalAlignment="Top" Click="salvar"/>
-        <Button x:Name="button" Content="Apagar Lista" HorizontalAlignment="Left" Margin="118,72,0,0" Grid.Row="2" VerticalAlignment="Top" Width="101" Click="apagarLista"/>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="87,72,0,0" Grid.Row="2" VerticalAlignment="Top" Click="salvar"/>
+        <Button x:Name="btnNovo" Content="Novo" HorizontalAlignment="Left" Margin="23,72,0,0" Grid.Row="2" VerticalAlignment="Top" Click="btnNovo_Click"/>
+        <Button x:Name="buttonDeleteAll" Content="Apagar Lista" HorizontalAlignment="Left" Margin="154,72,0,0" Grid.Row="2" VerticalAlignment="Top" Width="101" Click="apagarLista"/>
         <TextBlock x:Name="textBlockListSenha" HorizontalAlignment="Left" Margin="14,229,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <ListView x:Name="listViewSenha" HorizontalAlignment="Left" Height="100" Margin="414,82,0,0" VerticalAlignment="Top" Width="323" SelectionChanged="listView_SelectionChanged" ItemsSource="{x:Bind SenhaViewModel.Senhas}" IsItemClickEnabled="True" Grid.RowSpan="2" >
             <ListView.ItemTemplate>

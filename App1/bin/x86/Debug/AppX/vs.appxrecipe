@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T13:30:28.816</Modified>
+      <Modified>2016-11-26T15:44:57.419</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\App1.exe">
       <PackagePath>entrypoint\App1.exe</PackagePath>
-      <Modified>2016-11-26T13:30:24.413</Modified>
+      <Modified>2016-11-26T15:44:42.907</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\BigMath\0.4.4\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\BigMath.dll">
       <PackagePath>BigMath.dll</PackagePath>
@@ -534,37 +534,37 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-11-20T00:08:13.780</Modified>
+      <Modified>2016-11-26T14:15:05.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-20T00:08:13.796</Modified>
+      <Modified>2016-11-26T14:15:05.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-20T00:08:13.796</Modified>
+      <Modified>2016-11-26T14:15:05.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-20T00:08:13.796</Modified>
+      <Modified>2016-11-26T14:15:05.670</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-20T00:08:13.796</Modified>
+      <Modified>2016-11-26T14:15:05.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-20T00:08:13.796</Modified>
+      <Modified>2016-11-26T14:15:05.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-20T00:08:13.796</Modified>
+      <Modified>2016-11-26T14:15:05.677</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\App1.xr.xml">
       <PackagePath>App1.xr.xml</PackagePath>
@@ -577,11 +577,11 @@
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T12:14:46.288</Modified>
+      <Modified>2016-11-26T15:44:52.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\Core\App1.exe">
       <PackagePath>App1.exe</PackagePath>
-      <Modified>2016-11-26T13:30:28.811</Modified>
+      <Modified>2016-11-26T15:44:57.276</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

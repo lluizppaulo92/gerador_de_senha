@@ -225,6 +225,10 @@ namespace App1
             preencherSenha(senhaSelecionada);
         }
 
+        private void btnNovo_Click(object sender, RoutedEventArgs e)
+        {
+            limparCampos();
+        }
     }
 
 }
