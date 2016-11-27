@@ -109,29 +109,40 @@ namespace App1
         }
         
         private async void SalvarSenha(object sender, RoutedEventArgs e)
-        {    
-            senhaModel.descricao = textBoxTituloSenha.Text;
-            senhaModel.password = textBoxSenhaGerada.Text;
+        {
+            if (textBoxSenhaGerada.Text != "")
+            {
+                senhaModel.descricao = textBoxTituloSenha.Text;
+                senhaModel.password = textBoxSenhaGerada.Text;
 
-            if (senhaModel.senhaId == 0)
+                if (senhaModel.senhaId == 0)
+                {
+                    await this.senhaDAO.InsertSenhaAsync(senhaModel);
+                    limparCampos();
+                }
+                else
+                {
+                    await this.senhaDAO.UpdateSenhaAsync(senhaModel);
+                    limparCampos();
+                }
+                carregarLista();
+            }else
             {
-                await this.senhaDAO.InsertSenhaAsync(senhaModel);
-                limparCampos();
+                textBlockMensagem.Text = "Favor gerar a senha antes de Salvar";
             }
-            else
-            {
-                await this.senhaDAO.UpdateSenhaAsync(senhaModel);
-                limparCampos();
-             }
-          carregarLista();
         }
 
         private async void deletarSenha(object sender, RoutedEventArgs e)
         {
-            await this.senhaDAO.DeleteSenhaAsync(senhaModel);
-            limparCampos();
-            carregarLista();
-            
+            if (textBoxSenhaGerada.Text != "")
+            {
+                await this.senhaDAO.DeleteSenhaAsync(senhaModel);
+                limparCampos();
+                carregarLista();
+            }else
+            {
+                textBlockMensagem.Text = "Favor selecione uma senha para ser exlcuida";
+            }
 
         }
 
