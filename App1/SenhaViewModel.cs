@@ -11,9 +11,9 @@ namespace App1
     {
         private ObservableCollection<Senha> senhas = new ObservableCollection<Senha>();
         public ObservableCollection<Senha> Senhas { get { return this.senhas; } }
-        public  SenhaViewModel()
+        public SenhaViewModel()
         {
-            popularSenhas(); 
+            popularSenhas();
         }
 
         public async void popularSenhas()
@@ -26,7 +26,9 @@ namespace App1
                 {
                     this.senhas.Add(senhaEach);
                 }
-            }catch(SQLite.Net.SQLiteException e)
+
+            }
+            catch (SQLite.Net.SQLiteException e)
             {
                 //Não carrega listagem
             }
@@ -34,7 +36,7 @@ namespace App1
 
         public void atualizar(Senha senha)
         {
-            foreach(Senha s in Senhas)
+            foreach (Senha s in Senhas)
             {
                 if (s.senhaId == senha.senhaId)
                 {

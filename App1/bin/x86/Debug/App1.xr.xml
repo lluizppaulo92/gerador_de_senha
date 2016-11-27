@@ -27,7 +27,6 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootEvent Name="Checked" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
       <RootProperty Name="HorizontalAlignment" />
@@ -64,6 +63,7 @@
       <RootProperty Name="IsHoldingEnabled" />
       <RootProperty Name="IsRightTapEnabled" />
       <RootProperty Name="IsTapEnabled" />
+      <RootProperty Name="IsEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
@@ -80,12 +80,9 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="ItemTemplate" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
@@ -98,6 +95,7 @@
       <RootProperty Name="Symbol" />
       <RootProperty Name="Margin" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="App1.MainPage" />
   </Roots.RootTypes>
 </Roots>
