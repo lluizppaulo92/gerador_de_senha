@@ -41,7 +41,10 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="414,49,0,0" TextWrapping="Wrap" Text="Lista de Senhas" VerticalAlignment="Top" Width="323"/>
+        <TextBlock x:Name="textBlockTituloListSenhas" HorizontalAlignment="Left" Margin="414,49,0,0" TextWrapping="Wrap" Text="Lista de Senhas" VerticalAlignment="Top" Width="323"/>
+        <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="58,116,0,0" Grid.Row="2" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="button1" Content="Cad Login" HorizontalAlignment="Left" Margin="155,116,0,0" Grid.Row="2" VerticalAlignment="Top" Click="button1_Click"/>
+        <TextBlock x:Name="textBlockAlterarLogin" HorizontalAlignment="Left" Margin="614,17,0,0" TextWrapping="Wrap" Text="Alterar Login" VerticalAlignment="Top" Foreground="#FF04D0FF" PointerPressed="editarLogin"/>
 
     </Grid>
 </Page>

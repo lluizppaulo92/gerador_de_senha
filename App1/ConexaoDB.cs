@@ -4,6 +4,8 @@ using SQLite.Net.Async;
 using System;
 using SQLite.Net;
 using SQLite.Net.Platform.WinRT;
+using App1.login;
+using App1.Model;
 
 namespace App1
 {
@@ -24,11 +26,18 @@ namespace App1
         public async Task InitializeDatabase()
         {
             await conn.CreateTableAsync<Senha>();
+            await conn.CreateTableAsync<LoginModel>();
         }
 
         public SQLiteAsyncConnection GetAsyncConnection()
         {
             return conn;
+        }
+
+        public void deleteAll()
+        {
+            conn.DeleteAllAsync<Senha>();
+            conn.DeleteAllAsync<LoginModel>();
         }
     }
 }

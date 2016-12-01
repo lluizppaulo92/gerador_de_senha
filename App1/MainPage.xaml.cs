@@ -5,6 +5,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using App1.login;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -162,6 +163,20 @@ namespace App1
             limparCampos();
         }
 
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PageLogin));
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+           this.Frame.Navigate(typeof(CadLogin));
+        }
+
+        private void editarLogin(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(EditarLogin));
+        }
     }
 
 }
