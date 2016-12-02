@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 namespace App1
 {
-  //  [Table("Senha")]
     class Senha
     {
         [PrimaryKey, AutoIncrement]

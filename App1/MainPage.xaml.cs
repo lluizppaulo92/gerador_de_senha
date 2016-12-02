@@ -6,7 +6,7 @@ using Windows.UI.Xaml.Controls;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using App1.login;
-
+using Windows.ApplicationModel.DataTransfer;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 // Colaboradores: Luiz Paulo, Matheus Jose, Carlos Eduardo
@@ -140,9 +140,11 @@ namespace App1
                 await this.senhaDAO.DeleteSenhaAsync(senhaModel);
                 limparCampos();
                 carregarLista();
-            }else
+                textBlockMensagem.Text = "Senha deletada com sucesso!";
+            }
+            else
             {
-                textBlockMensagem.Text = "Favor selecione uma senha para ser exlcuida";
+                textBlockMensagem.Text = "Favor selecionar uma senha para ser exlcuida!";
             }
 
         }
@@ -176,6 +178,22 @@ namespace App1
         private void editarLogin(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(EditarLogin));
+        }
+
+        private void btnCopiar(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
+        {
+            if (textBoxSenhaGerada.Text != "")
+            {
+                DataPackage dataPackage = new DataPackage();
+                dataPackage.RequestedOperation = DataPackageOperation.Copy;
+                dataPackage.SetText(textBoxSenhaGerada.Text);
+                Clipboard.SetContent(dataPackage);
+                textBlockMensagem.Text = "Senha copiada com sucesso!";
+            }
+            else
+            {
+                textBlockMensagem.Text = "Clique em gerar senha antes de copiar!";
+            }
         }
     }
 

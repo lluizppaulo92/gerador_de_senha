@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>67E7008A902FC6FCAB68A42305FA0A78277EE65A45D71B8779B8EEC8FE033CCC</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>F2619B1E762D25A310CDB10351BAF469466AFBDC75A45B88DAA0B7F477D58E9A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>d866ab1f-de7c-40af-875d-c1e33b3bd656_1.0.0.0_x86__1j6w29tb3vsr6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>d866ab1f-de7c-40af-875d-c1e33b3bd656_1j6w29tb3vsr6!App</RegisteredUserModeAppID>
     <RegisteredPackageID>d866ab1f-de7c-40af-875d-c1e33b3bd656</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-27T02:26:05.091</Modified>
+      <Modified>2016-12-02T02:32:10.674</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\App1.exe">
       <PackagePath>entrypoint\App1.exe</PackagePath>
-      <Modified>2016-11-27T02:26:00.325</Modified>
+      <Modified>2016-12-02T02:31:57.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\BigMath\0.4.4\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\BigMath.dll">
       <PackagePath>BigMath.dll</PackagePath>
@@ -44,53 +44,53 @@
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
       <Modified>2016-06-12T02:13:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.Core.dll">
       <PackagePath>System.Core.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.Net.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.Net.dll">
       <PackagePath>System.Net.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.Numerics.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.Numerics.dll">
       <PackagePath>System.Numerics.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.Runtime.Serialization.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.Runtime.Serialization.dll">
       <PackagePath>System.Runtime.Serialization.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.ServiceModel.Web.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.ServiceModel.Web.dll">
       <PackagePath>System.ServiceModel.Web.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.ServiceModel.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.ServiceModel.dll">
       <PackagePath>System.ServiceModel.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.Windows.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.Windows.dll">
       <PackagePath>System.Windows.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.Xml.Linq.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.Xml.Linq.dll">
       <PackagePath>System.Xml.Linq.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.Xml.Serialization.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.Xml.Serialization.dll">
       <PackagePath>System.Xml.Serialization.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.Xml.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.Xml.dll">
       <PackagePath>System.Xml.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.1\lib\netcore50\System.dll">
+    <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.dll">
       <PackagePath>System.dll</PackagePath>
-      <Modified>2016-06-14T00:51:24.000</Modified>
+      <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\Microsoft.VisualBasic\10.0.1\lib\netcore50\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
@@ -528,47 +528,51 @@
       <PackagePath>sqlite3.dll</PackagePath>
       <Modified>2016-11-17T22:03:28.796</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-11-20T00:08:13.796</Modified>
+    <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\Editing-Copy-icon.png">
+      <PackagePath>Assets\Editing-Copy-icon.png</PackagePath>
+      <Modified>2016-12-02T02:06:38.464</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-11-26T14:15:05.663</Modified>
+      <Modified>2016-11-28T10:32:20.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T14:15:05.666</Modified>
+      <Modified>2016-11-28T10:32:20.199</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T14:15:05.668</Modified>
+      <Modified>2016-11-28T10:32:20.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T14:15:05.670</Modified>
+      <Modified>2016-11-28T10:32:20.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T14:15:05.673</Modified>
+      <Modified>2016-11-28T10:32:20.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T14:15:05.674</Modified>
+      <Modified>2016-11-28T10:32:20.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T14:15:05.677</Modified>
+      <Modified>2016-11-28T10:32:20.206</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2016-11-28T10:32:20.215</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\App1.xr.xml">
       <PackagePath>App1.xr.xml</PackagePath>
-      <Modified>2016-11-27T01:37:07.582</Modified>
+      <Modified>2016-12-02T01:40:38.487</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -577,11 +581,11 @@
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-27T02:17:59.951</Modified>
+      <Modified>2016-12-02T02:32:07.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\Core\App1.exe">
       <PackagePath>App1.exe</PackagePath>
-      <Modified>2016-11-27T02:26:05.085</Modified>
+      <Modified>2016-12-02T02:32:10.668</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
