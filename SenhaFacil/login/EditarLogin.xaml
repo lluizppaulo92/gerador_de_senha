@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="SenhaFacil.login.EditarLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SenhaFacil.login"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlockLogin" HorizontalAlignment="Left" Margin="51,182,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxLogin" HorizontalAlignment="Left" Margin="48,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="251" PlaceholderText="Usuário"/>
+        <TextBlock x:Name="textBlockSenha" HorizontalAlignment="Left" Margin="48,240,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="passwordBoxSenha" HorizontalAlignment="Left" Margin="48,264,0,0" VerticalAlignment="Top" Width="251" PlaceholderText="Senha" Password=""/>
+        <TextBlock x:Name="textBlockEmail" HorizontalAlignment="Left" Margin="47,296,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxEmail" HorizontalAlignment="Left" Margin="48,317,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="251" PlaceholderText="E-mail"/>
+        <Button x:Name="buttonSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="164,362,0,0" VerticalAlignment="Top" Click="alterarLogin"/>
+        <Button x:Name="buttonCarregarLogin" Content="Buscar Login" HorizontalAlignment="Left" Margin="48,362,0,0" VerticalAlignment="Top" Click="preencherView" />
+        <TextBlock x:Name="textBlockMensagem" HorizontalAlignment="Left" Margin="48,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="251" Foreground="#FFFB0404"/>
+        <Button x:Name="buttonVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="236,362,0,0" VerticalAlignment="Top" Click="voltar"/>
+
+
+    </Grid>
+</Page>
