@@ -42,7 +42,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <TextBlock x:Name="textBlockTituloListSenhas" HorizontalAlignment="Left" Margin="414,49,0,0" TextWrapping="Wrap" Text="Lista de Senhas" VerticalAlignment="Top" Width="323"/>
-        <TextBlock x:Name="textBlockAlterarLogin" HorizontalAlignment="Left" Margin="614,17,0,0" TextWrapping="Wrap" Text="Alterar Login" VerticalAlignment="Top" Foreground="#FF04D0FF" PointerPressed="editarLogin"/>
+        <TextBlock x:Name="textBlockAlterarLogin" HorizontalAlignment="Left" Margin="614,20,0,0" TextWrapping="Wrap" Text="Alterar Login" VerticalAlignment="Top" Foreground="#FF04D0FF" PointerPressed="editarLogin"/>
         <Image x:Name="imageCopiar" HorizontalAlignment="Left" Height="32" Margin="333,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="40" Source="Assets/Editing-Copy-icon.png" PointerPressed="btnCopiar"/>
 
     </Grid>

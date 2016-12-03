@@ -40,14 +40,14 @@ namespace App1.login
 
         private void validarUsuarioSenha(object sender, RoutedEventArgs e)
         {
-            if (listLogin != null) { 
+            if (listLogin.Count != 0) { 
                 loginModel = listLogin[0];
                 LoginModel loginInformado = new LoginModel();
                 loginInformado.login = this.textBoxLogin.Text.ToString();
                 loginInformado.senha = this.passwordBoxSenha.Password;
                 if (loginInformado.login == "" || loginInformado.senha == "")
                 {
-                    textBlockMensagem.Text = "É necessário informar login e senha!";
+                    menssage("Login sistema!","É necessário informar login e senha!");
                 }
                 else{
                     if (loginModel.login.ToString() == loginInformado.login.ToString() && loginModel.senha.ToString() == loginInformado.senha.ToString())
@@ -56,12 +56,12 @@ namespace App1.login
                     }
                     else
                     {
-                        textBlockMensagem.Text = "Usuário ou senha inválidos!";
+                        menssage("Validação Usuário","Usuário ou senha inválidos!");
                     }
                 }
             }else
                 {
-                    textBlockMensagem.Text = "Nenhum login cadastrado! Favor acessar a opção Cadastrar-se!";
+                    menssage("Login sistema!","Nenhum login cadastrado! Favor acessar a opção Cadastrar-se!");
                 }
         }
 
@@ -69,7 +69,6 @@ namespace App1.login
         {
             try
             {
-                //listLocal = await loginDao.SelectLoginAsync("Select * from LoginModel where login='"+ loginModel.login+"'");
                 listLogin = await loginDao.SelectAllLoginAsync();
             } catch (NullReferenceException refEx) { } 
         }
@@ -79,10 +78,41 @@ namespace App1.login
             this.Frame.Navigate(typeof(CadLogin));
         }
 
-        private void limparDados(object sender, PointerRoutedEventArgs e)
+        private async void limparDados(object sender, PointerRoutedEventArgs e)
         {
-            conn.deleteAll();
-            textBlockMensagem.Text = "Dados deletados com sucesso!";
+            ContentDialog deleteFileDialog = new ContentDialog()
+            {
+                Title = "Limpar dados do aplicativo?",
+                Content = "Esta ação apaga usuário de acesso e todas as senhas armazenadas, deseja continuar?",
+                PrimaryButtonText = "Sim",
+                SecondaryButtonText = "Cancel"
+            };
+
+            ContentDialogResult result = await deleteFileDialog.ShowAsync();
+
+            if (result == ContentDialogResult.Primary)
+            {
+                conn.deleteAll();
+                menssage("Apagar dados!", "Dados apagados com sucesso!");
+            }
+        }
+
+        public async void menssage(String titulo, String menssagem)
+        {
+            ContentDialog noWifiDialog = new ContentDialog()
+            {
+                Title = titulo,
+                Content = menssagem,
+                PrimaryButtonText = "Ok"
+            };
+
+            ContentDialogResult result = await noWifiDialog.ShowAsync();
+        }
+
+        
+        private void recursoNaoImplemetado(object sender, PointerRoutedEventArgs e)
+        {
+            menssage("Recurso não implementado", "Este recurso está previsto para a próxima versão!");
         }
     }
 }

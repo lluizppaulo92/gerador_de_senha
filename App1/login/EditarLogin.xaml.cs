@@ -43,11 +43,11 @@ namespace App1.login
             {
                 preencherLogin();
                 await loginDao.UpdateLoginAsync(this.loginModel);
-                textBlockMensagem.Text = "Usuário Alterado!";
+                menssage("Alteração de usuário!","Usuário Alterado!");
             }
             else
             {
-                textBlockMensagem.Text = "Todos os campos são de preenchimento obrigatórios";
+               menssage("Preenchimento de campos obrigatórios!","Todos os campos são de preenchimento obrigatórios");
             }
         }
 
@@ -79,6 +79,18 @@ namespace App1.login
             this.textBoxLogin.Text = loginModel.login;
             this.passwordBoxSenha.Password = loginModel.senha;
             this.textBoxEmail.Text = loginModel.email;
+        }
+
+        public async void menssage(String titulo, String menssagem)
+        {
+            ContentDialog noWifiDialog = new ContentDialog()
+            {
+                Title = titulo,
+                Content = menssagem,
+                PrimaryButtonText = "Ok"
+            };
+
+            ContentDialogResult result = await noWifiDialog.ShowAsync();
         }
     }
 }

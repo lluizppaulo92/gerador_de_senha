@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using App1.login;
 using Windows.ApplicationModel.DataTransfer;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 // Colaboradores: Luiz Paulo, Matheus Jose, Carlos Eduardo
@@ -55,7 +56,7 @@ namespace App1
 
             if (!checkBoxLetraMaiuscula.IsChecked.Value & !checkBoxLetrasMinusculas.IsChecked.Value & !checkBoxNumeros.IsChecked.Value & !checkBoxCaracterEspecial.IsChecked.Value)
             {
-                textBlockMensagem.Text = "Marque pelo menos uma opção para gerar a senha";
+                menssage("Gerar Senha","Marque pelo menos uma opção para gerar a senha");
             }
             else
             {
@@ -129,7 +130,7 @@ namespace App1
                 carregarLista();
             }else
             {
-                textBlockMensagem.Text = "Favor gerar a senha antes de Salvar";
+                menssage("Salvar senha", "Favor gerar a senha antes de Salvar");
             }
         }
 
@@ -137,14 +138,28 @@ namespace App1
         {
             if (textBoxSenhaGerada.Text != "")
             {
-                await this.senhaDAO.DeleteSenhaAsync(senhaModel);
-                limparCampos();
-                carregarLista();
-                textBlockMensagem.Text = "Senha deletada com sucesso!";
+                ContentDialog deleteFileDialog = new ContentDialog()
+                {
+                    Title = "Deletar Senha?",
+                    Content = "Deseja realmente excluir a senha selecionada?",
+                    PrimaryButtonText = "Sim",
+                    SecondaryButtonText = "Não"
+                };
+
+                ContentDialogResult result = await deleteFileDialog.ShowAsync();
+                                
+                if (result == ContentDialogResult.Primary)
+                {
+                    await this.senhaDAO.DeleteSenhaAsync(senhaModel);
+                    limparCampos();
+                    carregarLista();
+                    menssage("Deletar senha", "Senha deletada com sucesso!");
+                }
+                
             }
             else
             {
-                textBlockMensagem.Text = "Favor selecionar uma senha para ser exlcuida!";
+                menssage("Deletar senha", "Favor selecionar uma senha para ser exlcuida!");
             }
 
         }
@@ -188,12 +203,24 @@ namespace App1
                 dataPackage.RequestedOperation = DataPackageOperation.Copy;
                 dataPackage.SetText(textBoxSenhaGerada.Text);
                 Clipboard.SetContent(dataPackage);
-                textBlockMensagem.Text = "Senha copiada com sucesso!";
+                menssage("Copiar Senha","Senha copiada com sucesso!");
             }
             else
             {
-                textBlockMensagem.Text = "Clique em gerar senha antes de copiar!";
+                menssage("Copiar Senha","Clique em gerar senha antes de copiar!");
             }
+        }
+
+        public async void menssage(String titulo,String menssagem)
+        {
+            ContentDialog noWifiDialog = new ContentDialog()
+            {
+                Title = titulo,
+                Content = menssagem,
+                PrimaryButtonText = "Ok"
+            };
+
+            ContentDialogResult result = await noWifiDialog.ShowAsync();
         }
     }
 

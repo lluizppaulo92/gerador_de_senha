@@ -45,13 +45,12 @@ namespace App1.login
                 if (listLogin.Count == 0){
                     preencherLogin();
                     await loginDao.InsertLoginAsync(this.loginModel);
-                    //this.Frame.Navigate(typeof(PageLogin));
-                    textBlockMensagem.Text = "Usuário cadastrado!";
+                    menssage("Cadastro de Usuário", "Usuário cadastrado!");
                 }else{
-                    textBlockMensagem.Text = "Cadastro cancelado! Já possui um usuário cadastrado!";
+                    menssage("Cadastro de Usuário", "Cadastro cancelado! Já possui um usuário cadastrado!");
                 }
             }else{
-                textBlockMensagem.Text = "Todos os campos são de preenchimento obrigatórios";
+                menssage("Validação de cadastro", "Todos os campos são de preenchimento obrigatórios");
             }
         }
 
@@ -65,6 +64,18 @@ namespace App1.login
         private void voltar(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PageLogin));
+        }
+
+        public async void menssage(String titulo, String menssagem)
+        {
+            ContentDialog noWifiDialog = new ContentDialog()
+            {
+                Title = titulo,
+                Content = menssagem,
+                PrimaryButtonText = "Ok"
+            };
+
+            ContentDialogResult result = await noWifiDialog.ShowAsync();
         }
 
     }

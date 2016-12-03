@@ -11,9 +11,8 @@
         <TextBox x:Name="textBoxLogin" HorizontalAlignment="Left" Margin="67,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213" PlaceholderText="Login"/>
         <PasswordBox x:Name="passwordBoxSenha" HorizontalAlignment="Left" Margin="67,144,0,0" VerticalAlignment="Top" Width="213" PlaceholderText="Senha"/>
         <Button x:Name="buttonEntrar" Content="Entrar" HorizontalAlignment="Left" Margin="139,181,-8,0" VerticalAlignment="Top" Click="validarUsuarioSenha" Foreground="#FF0A0A0A"/>
-        <TextBlock x:Name="textBlockEsqueceuSenha" HorizontalAlignment="Left" Margin="101,244,0,0" TextWrapping="Wrap" Text="Esqueceu sua Senha" VerticalAlignment="Top" Foreground="#FF04D0FF"/>
+        <TextBlock x:Name="textBlockEsqueceuSenha" HorizontalAlignment="Left" Margin="101,244,0,0" TextWrapping="Wrap" Text="Esqueceu sua Senha" VerticalAlignment="Top" Foreground="#FF04D0FF" PointerPressed="recursoNaoImplemetado"/>
         <TextBlock x:Name="textBlockCriarLogin" HorizontalAlignment="Left" Margin="127,274,0,0" TextWrapping="Wrap" Text="Cadastrar-se" VerticalAlignment="Top" Foreground="#FF04D0FF" PointerPressed="cadLogin" />
         <TextBlock x:Name="textBlockLimparDados" HorizontalAlignment="Left" Margin="123,303,0,0" TextWrapping="Wrap" Text="Limpar Dados" VerticalAlignment="Top" Foreground="#FF04D0FF" PointerPressed="limparDados"  />
-        <TextBlock x:Name="textBlockMensagem" HorizontalAlignment="Left" Margin="67,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213" Foreground="#FFFB0404"/>
     </Grid>
 </Page>

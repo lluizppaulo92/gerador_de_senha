@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-02T02:32:10.674</Modified>
+      <Modified>2016-12-03T02:12:17.389</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\App1.exe">
       <PackagePath>entrypoint\App1.exe</PackagePath>
-      <Modified>2016-12-02T02:31:57.817</Modified>
+      <Modified>2016-12-03T02:12:03.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paula Caroline\.nuget\packages\BigMath\0.4.4\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\BigMath.dll">
       <PackagePath>BigMath.dll</PackagePath>
@@ -581,11 +581,11 @@
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-02T02:32:07.112</Modified>
+      <Modified>2016-12-03T02:12:14.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\projetos\gerador_de_senha\App1\bin\x86\Debug\Core\App1.exe">
       <PackagePath>App1.exe</PackagePath>
-      <Modified>2016-12-02T02:32:10.668</Modified>
+      <Modified>2016-12-03T02:12:17.347</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
