@@ -7,12 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBoxLogin" HorizontalAlignment="Left" Margin="67,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213" PlaceholderText="Login"/>
-        <PasswordBox x:Name="passwordBoxSenha" HorizontalAlignment="Left" Margin="67,144,0,0" VerticalAlignment="Top" Width="213" PlaceholderText="Senha"/>
-        <Button x:Name="buttonEntrar" Content="Entrar" HorizontalAlignment="Left" Margin="139,181,-8,0" VerticalAlignment="Top" Click="validarUsuarioSenha" Foreground="#FF0A0A0A"/>
-        <TextBlock x:Name="textBlockEsqueceuSenha" HorizontalAlignment="Left" Margin="101,244,0,0" TextWrapping="Wrap" Text="Esqueceu sua Senha" VerticalAlignment="Top" Foreground="#FF04D0FF" PointerPressed="recursoNaoImplemetado"/>
-        <TextBlock x:Name="textBlockCriarLogin" HorizontalAlignment="Left" Margin="127,274,0,0" TextWrapping="Wrap" Text="Cadastrar-se" VerticalAlignment="Top" Foreground="#FF04D0FF" PointerPressed="cadLogin" />
-        <TextBlock x:Name="textBlockLimparDados" HorizontalAlignment="Left" Margin="123,303,0,0" TextWrapping="Wrap" Text="Limpar Dados" VerticalAlignment="Top" Foreground="#FF04D0FF" PointerPressed="limparDados"  />
+    <Grid>
+        <TextBox x:Name="textBoxLogin" HorizontalAlignment="Left" Margin="264,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" PlaceholderText="Login" Canvas.ZIndex="1" Background="#FFFBFBFB" BorderBrush="{x:Null}" SelectionHighlightColor="#FF04B9FD" Foreground="Black"/>
+        <PasswordBox x:Name="passwordBoxSenha" HorizontalAlignment="Left" Margin="262,172,0,0" VerticalAlignment="Top" Width="176" PlaceholderText="Senha" Canvas.ZIndex="1" Background="#FFC99393" BorderBrush="{x:Null}" SelectionHighlightColor="#FF04B9FD" Foreground="Black"/>
+        <Button x:Name="buttonEntrar" Content="Entrar" HorizontalAlignment="Left" Margin="330,212,0,0" VerticalAlignment="Top" Click="validarUsuarioSenha" Foreground="White" Background="#33000000" Canvas.ZIndex="1" RenderTransformOrigin="0.525,0.562"/>
+        <TextBlock x:Name="textBlockEsqueceuSenha" HorizontalAlignment="Left" Margin="297,249,0,0" TextWrapping="Wrap" Text="Esqueceu sua Senha" VerticalAlignment="Top" Foreground="#FFFDFDFD" PointerPressed="recursoNaoImplemetado" Canvas.ZIndex="1"/>
+        <TextBlock x:Name="textBlockCriarLogin" HorizontalAlignment="Left" Margin="318,274,0,0" TextWrapping="Wrap" Text="Cadastrar-se" VerticalAlignment="Top" Foreground="#FFFDFDFD" PointerPressed="cadLogin" Canvas.ZIndex="1" />
+        <TextBlock x:Name="textBlockLimparDados" HorizontalAlignment="Left" Margin="315,315,0,0" TextWrapping="Wrap" Text="Limpar Dados" VerticalAlignment="Top" Foreground="#FFFDFDFD" PointerPressed="limparDados" Canvas.ZIndex="1"  />
+        <Image x:Name="image" HorizontalAlignment="Left" Height="360" Margin="235,0,0,0" VerticalAlignment="Top" Width="258" Source="ms-appx:///Assets/login.png"/>
     </Grid>
 </Page>

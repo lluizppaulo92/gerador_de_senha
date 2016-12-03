@@ -28,7 +28,7 @@
         <Button x:Name="buttonDeleteAll" Content="Deletar" HorizontalAlignment="Left" Margin="190,52,0,0" Grid.Row="2" VerticalAlignment="Top" Width="86" Click="deletarSenha"/>
         <TextBlock x:Name="textBlockListSenha" HorizontalAlignment="Left" Margin="14,229,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
 
-        <ListView x:Name="listViewSenha" HorizontalAlignment="Left" Height="418" Margin="414,82,0,0" VerticalAlignment="Top" Width="323" SelectionChanged="selecionarSenha"  Grid.RowSpan="3" >
+        <ListView x:Name="listViewSenha" HorizontalAlignment="Left" Height="268" Margin="414,82,0,0" VerticalAlignment="Top" Width="323" SelectionChanged="selecionarSenha"  Grid.RowSpan="3" >
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Senha" >
                     <StackPanel Orientation="Horizontal" Margin="6">

@@ -45,8 +45,10 @@ namespace SenhaFacil.login
                 if (listLogin.Count == 0){
                     preencherLogin();
                     await loginDao.InsertLoginAsync(this.loginModel);
-                    menssage("Cadastro de Usuário", "Usuário cadastrado!");
-                }else{
+                    menssage("Cadastro de Usuário", "Usuário cadastrado com sucesso!");
+                    this.Frame.Navigate(typeof(PageLogin));
+                }
+                else{
                     menssage("Cadastro de Usuário", "Cadastro cancelado! Já possui um usuário cadastrado!");
                 }
             }else{

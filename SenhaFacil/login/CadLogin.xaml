@@ -8,11 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBoxLogin" HorizontalAlignment="Left" Margin="48,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="251" PlaceholderText="Usuário"/>
-        <PasswordBox x:Name="passwordBoxSenha" HorizontalAlignment="Left" Margin="48,244,0,0" VerticalAlignment="Top" Width="251" PlaceholderText="Senha" Password=""/>
-        <TextBox x:Name="textBoxEmail" HorizontalAlignment="Left" Margin="48,281,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="251" PlaceholderText="E-mail"/>
-        <Button x:Name="buttonCadastrar" Content="Cadastar" HorizontalAlignment="Left" Margin="94,318,0,0" VerticalAlignment="Top" Click="salvarLogin"/>
-        <TextBlock x:Name="textBlockMensagem" HorizontalAlignment="Left" Margin="48,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="251" Foreground="#FFFB0404"/>
-        <Button x:Name="buttonVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="177,318,0,0" VerticalAlignment="Top" Click="voltar"/>
+        <TextBox x:Name="textBoxLogin" HorizontalAlignment="Left" Margin="227,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="187" PlaceholderText="Usuário" Canvas.ZIndex="1" BorderBrush="{x:Null}"/>
+        <PasswordBox x:Name="passwordBoxSenha" HorizontalAlignment="Left" Margin="229,176,0,0" VerticalAlignment="Top" Width="183" PlaceholderText="Senha" Password="" Canvas.ZIndex="1" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="textBoxEmail" HorizontalAlignment="Left" Margin="229,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="183" PlaceholderText="E-mail" Canvas.ZIndex="1" BorderBrush="{x:Null}"/>
+        <Button x:Name="buttonCadastrar" Content="Cadastar" HorizontalAlignment="Left" Margin="255,318,0,0" VerticalAlignment="Top" Click="salvarLogin" Canvas.ZIndex="1" Background="#33FFFFFF"/>
+        <Button x:Name="buttonVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="351,318,0,0" VerticalAlignment="Top" Click="voltar" Canvas.ZIndex="1" Background="#33FFFFFF"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="375" Margin="199,-5,0,-10" VerticalAlignment="Top" Width="270" Source="ms-appx:///Assets/cadLoig.png"/>
     </Grid>
 </Page>
